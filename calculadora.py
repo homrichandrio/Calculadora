@@ -8,16 +8,21 @@ import time as tm
 import sys
 import os
 
-# mensagens da inicialização do programa
 
-print('\n----------------------------------------------\nBem-vindo ao programa Cálculadora em Python!\n----------------------------------------------\n')
-tm.sleep(2)
 
 # variavel para execução do programa originalmente definida como True
 executar = True
 while executar == True:
+
+    os.system('cls') or None
+
+    # mensagens da inicialização do programa
+
+    print('\n----------------------------------------------\nBem-vindo ao programa Cálculadora em Python!\n----------------------------------------------\n')
+    tm.sleep(2)
     print('Para utilização deste programa, utilize os códigos abaixo para realizar as seguintes operações:\n\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Exponenciação\n\n----------------------------------------------\n')
     tm.sleep(2)
+
     # definição do código da operação à ser utilizada - convertida em float
     codigo_operacao = input("Informe o código da operação que você deseja fazer: ")
     print('')
@@ -101,6 +106,10 @@ while executar == True:
         executar = False
         tm.sleep(1)
 
-print('\nVolte sempre!')
+os.system('cls') or None
+print('\n-------------------------------------------------\nVocê utilizou o programa Cálculadora em Python!\n-------------------------------------------------\n')
+tm.sleep(2)
+print('Este programa foi desenvolvido por Andrio Homrich.\nVersão 1.1 lançada em 16.11.2022\n\n-------------------------------------------------\nVolte Sempre!\n-------------------------------------------------\n')
+tm.sleep(2)
 tm.sleep(2)        
 sys.exit()
